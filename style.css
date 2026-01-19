@@ -9,11 +9,13 @@ html, body {
     height: 100%;
     margin: 0;
 }
+
 body{
     display: flex;
     flex-direction: column;
     font-family: "Comic Neue", sans-serif;
     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bece7ff4-b430-45e9-a4ed-b364f4bade69/dkh6hj6-529722fe-4dcc-4bb0-a598-9b80be075c52.png/v1/fit/w_828,h_1018,q_70,strp/rubber_cat_by_temaneki_dkh6hj6-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM4OCIsInBhdGgiOiIvZi9iZWNlN2ZmNC1iNDMwLTQ1ZTktYTRlZC1iMzY0ZjRiYWRlNjkvZGtoNmhqNi01Mjk3MjJmZS00ZGNjLTRiYjAtYTU5OC05YjgwYmUwNzVjNTIucG5nIiwid2lkdGgiOiI8PTExMjgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rXosjjPh4WW8E36GTWM1UTAjr4zvkX8StAe81G9v_tM);
+    background-color: aliceblue;
     background-size: cover;
     background-repeat:repeat;
     font-size: clamp(16px, 1.5vw, 20px);
@@ -123,4 +125,97 @@ footer {
 }
 .dropdown-content a:hover {
   background-color: rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 1400px) and (orientation: portrait){
+    body {
+        width: 100vw;
+        font-size: 2em;
+    }
+    article {
+        flex-direction: column-reverse;
+        align-items: center;
+        min-width: 16rem;
+        margin: 5vw;
+        padding:10px;
+    }
+    #artwork {
+        height: 40rem;
+        border-radius: 20px;
+        margin: 5px 10px;
+        width: 35rem;
+    }
+    #project img {
+        height: 7vh;
+        border-radius: 40px;
+    }
+    .dropdown-content {
+        height: 20rem;
+        width:10rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:700px) and (orientation: portrait){
+    body {
+        width: 100vw;
+        font-size: 1.5em;
+    }
+    article {
+        min-width: 16rem;
+        padding:10px;
+    }
+    #artwork {
+        height: 20rem;
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width:500px) and (orientation: portrait){
+    body {
+        width: 100vw;
+        font-size: 1.2em;
+    }
+    article {
+        min-width: 16rem;
+        padding:10px;
+    }
+    #artwork {
+        height: 18rem;
+        width: 15rem;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    header{
+        padding: 10px;
+        height: 1vh;
+    }
+    body {
+        width: 100vw;
+        font-size: 3vw;
+    }
+    
+    article {
+        flex-direction: row-reverse;
+        /* min-width: 16rem; */
+        padding:1.5vw;
+        justify-content: space-evenly;
+    }
+    
+    #artwork {
+        height: 30vw;
+        width: 28vw;
+    }
+        
+    #project img {
+        height: 6vw;
+    }
+
+    #avatar{
+        padding: 1vh 0;
+        width: 5vw;
+        height: 5vw;
+    }
 }
