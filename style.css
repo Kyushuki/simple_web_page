@@ -5,13 +5,18 @@
     src: url(fonts/ComicNeue-Regular.ttf);
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body{
+    display: flex;
+    flex-direction: column;
     font-family: "Comic Neue", sans-serif;
     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bece7ff4-b430-45e9-a4ed-b364f4bade69/dkh6hj6-529722fe-4dcc-4bb0-a598-9b80be075c52.png/v1/fit/w_828,h_1018,q_70,strp/rubber_cat_by_temaneki_dkh6hj6-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM4OCIsInBhdGgiOiIvZi9iZWNlN2ZmNC1iNDMwLTQ1ZTktYTRlZC1iMzY0ZjRiYWRlNjkvZGtoNmhqNi01Mjk3MjJmZS00ZGNjLTRiYjAtYTU5OC05YjgwYmUwNzVjNTIucG5nIiwid2lkdGgiOiI8PTExMjgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rXosjjPh4WW8E36GTWM1UTAjr4zvkX8StAe81G9v_tM);
     background-size: cover;
     background-repeat:repeat;
-    margin:0;
-    font-size: 2vw;
+    font-size: clamp(16px, 1.5vw, 20px);
 }
 
 header {
@@ -26,22 +31,24 @@ header h1 {
     margin: 10px;
     margin-right: auto;
 }
-
+main {
+    flex: 1 auto;
+}
 article{
     min-width: 50vw;
     overflow: hidden;
     display: flex;
     gap: 10px;
     justify-content:space-evenly;
+    flex-wrap: wrap;
     word-break: break-word;
     background-color: #F8F1F1;
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px 5vw;
     padding: 10px;
 }
 footer {
-    position: fixed;
-    bottom: 0;
+    flex-shrink: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 0px 5px;
@@ -62,9 +69,10 @@ footer {
 }
 
 #artwork {
-    height: 50vw;
-    width: 40vw;
+    height: 45vw;
+    width: 35vw;
     border-radius: 20px;
+    margin: 1px;
 }
 
 #project {
@@ -80,6 +88,7 @@ footer {
     gap: 10px;
     text-decoration: none;
     color: inherit;
+    margin:10px;
 }
 
 #project img {
