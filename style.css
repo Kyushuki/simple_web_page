@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Comic Neue";
+    font-style: normal;
+    src: url(fonts/ComicNeue-Regular.ttf);
+}
+#hidemenu{
+    display: none;
+    box-sizing: border-box;
+    border-radius: 34px;
+    width: 348px;
+    height: 550px;
+    background: #D9D9D9;
+    
+
+    position: fixed; 
+    right: 25px;
+    top: 100px;
+}
+body {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "article article"
+    "footer footer" ;
+    grid-template-rows: 80px 1fr 70px;  
+    grid-template-columns: repeat(auto-fit, minmax(10%,1fr));
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 140vh;
+    margin: 0;
+    font-family: "Comic Neue";
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bece7ff4-b430-45e9-a4ed-b364f4bade69/dkh6hj6-529722fe-4dcc-4bb0-a598-9b80be075c52.png/v1/fit/w_828,h_1018,q_70,strp/rubber_cat_by_temaneki_dkh6hj6-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM4OCIsInBhdGgiOiIvZi9iZWNlN2ZmNC1iNDMwLTQ1ZTktYTRlZC1iMzY0ZjRiYWRlNjkvZGtoNmhqNi01Mjk3MjJmZS00ZGNjLTRiYjAtYTU5OC05YjgwYmUwNzVjNTIucG5nIiwid2lkdGgiOiI8PTExMjgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rXosjjPh4WW8E36GTWM1UTAjr4zvkX8StAe81G9v_tM);
+    background-size: cover;
+    background-repeat:round;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+li {
+    float : left;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 32px;
+}
+li a {
+    
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+  }
+li a:hover {
+    color: white;
+  }
+p a{
+    color: black;
+    text-decoration: none;
+}
+p a:hover {
+    color:white;
+}
+header {
+    grid-area: header;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+}
+#avatar {
+    width: 83px;
+    height: 83px;
+    left: 14px;
+    top: 12px;
+    border-radius: 1972px;
+}
+#menu {
+    width: 63px;
+    height: 41px;
+}
+#rec{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1344px;
+    height: 796px;
+    left: 49px;
+    right: 49px;
+    top: 199px;
+
+    background: #F8F1F1;
+    
+
+    border-radius: 43px;
+}
+#articletable {
+    width: 100%;
+    height: 100%;
+   
+}
+h4, p {
+    font-size: 32px;
+}
+.Newest {
+    position: absolute;
+    width: 457px;
+    height: 521px;
+    left: 19px;
+    top: 171px;
+    border-radius: 16px;
+}
+.phmenu{
+    width: 149px;
+    height: 137px;
+    border-radius: 1972px;
+}
+@media screen and (max-width: 30%) {
+    body {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "article"
+        "footer" ;
+        grid-template-rows: 80px 1fr 70px;  
+        grid-template-columns: repeat(auto-fit, minmax(10%,1fr));
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        height: 140vh;
+        
+}
+}
