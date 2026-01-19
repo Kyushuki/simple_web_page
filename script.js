@@ -1,6 +1,6 @@
 let count = 0;
 function Menu(name){
-    let elem = document.getElementById(name);
+    let elem = document.getElementsByClassName(name)[0];
     if (count == 0 && elem){
         elem.style.display = 'block';
         document.getElementById("menu").src = 'images/menuActive.svg'

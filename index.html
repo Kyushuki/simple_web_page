@@ -3,69 +3,53 @@
     <head lang="en">
         <title>KyuTema</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="images/avatar.jpg">
+        <link rel="icon" type="image/x-icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bece7ff4-b430-45e9-a4ed-b364f4bade69/djqk5ga-e0fef492-12c0-4197-89a5-1177898d0700.png/v1/fill/w_857,h_933,q_70,strp/_diva_by_temaneki_djqk5ga-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM5MyIsInBhdGgiOiIvZi9iZWNlN2ZmNC1iNDMwLTQ1ZTktYTRlZC1iMzY0ZjRiYWRlNjkvZGpxazVnYS1lMGZlZjQ5Mi0xMmMwLTQxOTctODlhNS0xMTc3ODk4ZDA3MDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jcCoFpcwX3Q6BS3tDsKVg5izeqnQK3q0ZjKI1kBW1FI">
         <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <header>
-            <table style="position: absolute; top: 20px; left: 49px; right: 49px;">
-                <tr>
-                    <td><img id ="avatar" src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bece7ff4-b430-45e9-a4ed-b364f4bade69/djqk5ga-e0fef492-12c0-4197-89a5-1177898d0700.png/v1/fill/w_857,h_933,q_70,strp/_diva_by_temaneki_djqk5ga-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM5MyIsInBhdGgiOiIvZi9iZWNlN2ZmNC1iNDMwLTQ1ZTktYTRlZC1iMzY0ZjRiYWRlNjkvZGpxazVnYS1lMGZlZjQ5Mi0xMmMwLTQxOTctODlhNS0xMTc3ODk4ZDA3MDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jcCoFpcwX3Q6BS3tDsKVg5izeqnQK3q0ZjKI1kBW1FI" alt = "avatar of KyuTema"></td>
-                    <td style="width:100%"><h1>KyuTema</h1></td>
-                    <td>
-                        <img onClick="Menu('hidemenu')" id = "menu" src = "images/menu.svg" alt = "menu button">
-                    </td>
-                </tr>
-            </table>
+            <img id="avatar" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bece7ff4-b430-45e9-a4ed-b364f4bade69/djqk5ga-e0fef492-12c0-4197-89a5-1177898d0700.png/v1/fill/w_857,h_933,q_70,strp/_diva_by_temaneki_djqk5ga-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM5MyIsInBhdGgiOiIvZi9iZWNlN2ZmNC1iNDMwLTQ1ZTktYTRlZC1iMzY0ZjRiYWRlNjkvZGpxazVnYS1lMGZlZjQ5Mi0xMmMwLTQxOTctODlhNS0xMTc3ODk4ZDA3MDAucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.jcCoFpcwX3Q6BS3tDsKVg5izeqnQK3q0ZjKI1kBW1FI" alt="KyuTema's avatar">
+            <h1>KyuTema</h1>
+            <div class="dropdown">
+                <img onclick="Menu('dropdown-content')" id="menu" src="images/menu.svg" alt="three lines for menu">
+                <div class="dropdown-content">
+                    <h4>Social Networks</h4>
+                    <hr>
+                    <a href="https://www.github.com/Kyushuki">GitHub</a>
+                    <a href="#">SomeOther</a>
+                    <hr>
+                    <a href="mailto:someemail@email.com">Contacnt</a>
+                </div>
+            </div>
         </header>
-        <article id="rec">
-            <table id = "articletable">
-                <tr >
-                    <td style="width: 40%;"> <h3 style="font-size: 50px; position:absolute; top: 20px; left: 23px;">Newest artwork</h3> </td>
-                    <td><p >Welcome to my site, Traveler <br>I’m Andrew, an artist and student of Faculty of Physics</p> </td>
-                </tr>
-                <tr>
-                    <td style="width: 40%;"rowspan="5"><img class = "Newest" src="images/background.jpg" alt = "newest artwork"></td>
-                    <td > <p>I am open to suggestions and orders <br> So you can always <a href="mailto:example@mail.com"> contact me</a></p></td>
-                </tr>
-                <tr>
-                    <td><h4>My social networks:</h4> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li><a href="https://github.com/Kyushuki">github</a></li>
-                            <li><a href="">some media</a></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h4> My repositories on github:</h4></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                        <li><a href="https://www.github.com/Kyushuki/PseudoGraphik_HM"><img class="phmenu" src="images/pseudographic.png"></a></li>
-                        <li><a><img class="phmenu" src="images/inprocess.svg"></a></li>
-                        <li><a><img class="phmenu" src="images/inprocess.svg"></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://www.github.com/Kyushuki/PseudoGraphik_HM">pseudographic</a></li>
-                        <li>IntecralCalc</li>
-                        <li>IR Morse</li>
-                    </ul>
-                    </td>
-                </tr>  
-            </table>
+        <article>
+            <div>
+                <h2>Newest artwork</h2>
+                <img id="artwork" src="images/background.jpg" alt="Newest artwork by KyuTema">
+            </div>
+            <div>
+                <h2>About</h2>
+                <p>
+                    Hello, Traveler!<br>
+                    I'm Andrew <s>(Kyushuki/KyuTema)</s>,<br> 
+                    an artist and a student of Faculty of Physics
+                </p>
+                <p>
+                    I devote my time to the things I love <br>
+                    Always open to something new :D
+                </p>
+                <h3>Some project's:</h3>
+                <div id="project">
+                    <a href=""><img class="project-img" src="images/inprocess.svg">OS Labs</a>
+                    <a href=""><img class="project-img" src="images/inprocess.svg">ANN Labs</a>
+                    <a href=""><img class="project-img" src="images/inprocess.svg">CS Labs</a>
+                </div>
+            </div>
         </article>
-        <div id="hidemenu">
-            <table style="width:100%;height: 10%;">
-                <tr><th><p style="padding-left: 10px;">SocialNetworks</p></th></tr>
-                <tr><td><p style="padding-left: 10px;"><a href="">some media</a></p></td></tr>
-                <tr><td><p style="padding-left: 10px;"><a href="https://github.com/Kyushuki">github</a></p></td></tr>
-                <tr><td><p style="padding-left: 10px;"><a href="mailto:example@mail.com">Contact me</a></p></td></tr>
-            </table>
-        </div>
-        <footer><p>Designed by KyuTema 2023</p></footer>
+        <footer>
+            <p>
+                &copy; 2026 KyuTema.  Designed by KyuTema 2023-2026.
+            </p>
+        </footer>
     </body>
 </html>
